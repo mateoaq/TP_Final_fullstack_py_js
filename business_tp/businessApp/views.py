@@ -5,7 +5,5 @@ from django.http import HttpResponse
 def index(request):
    return HttpResponse('<h1 style=\"color:red\">Hello <b>world</b></h1>')
 
-def business(request):
-    return render(request, 'business/index.html')
 
 
