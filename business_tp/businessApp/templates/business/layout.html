@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hello</title>
+        <link rel="stylesheet" href="{% static 'business/styles.css' %}"/>
+    </head>
+    <body>
+
+        {% include "business/header.html" %}
+        {% include "business/menu.html" %}
+
+        {% block content %}{% endblock %}
+
+        {% include "business/footer.html" %}
+
+
+    </body>
+</html>
